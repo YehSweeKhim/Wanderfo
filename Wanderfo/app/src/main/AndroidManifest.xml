@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.wanderfoapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Government.Announcement"></activity>
+        <activity android:name=".Home.Food" />
+        <activity android:name=".Home.UserView" />
+        <activity
+            android:name=".Shop.RequestAccess"
+            android:label="View shop permission"
+            android:parentActivityName=".Shop.Login" />
+        <activity android:name=".Shop.Login" />
+        <activity android:name=".Shop.EditItemActivity" />
+        <activity android:name=".Shop.AddItemActivity" />
+        <activity android:name=".Shop.ShopPage" />
+        <activity
+            android:name=".Home.Home"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

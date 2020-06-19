@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/UserView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_user_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/storeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:padding="4dp"
+                        android:text="Ada Shop"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/storeHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/storeName"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:drawablePadding="20dp"
+                        android:padding="4dp"
+                        android:text="Location: "
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/storeLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/storeName"
+                        android:layout_toRightOf="@+id/storeHeader"
+                        android:padding="4dp"
+                        android:text="Upper Changi"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/storeOpeningHoursHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/storeHeader"
+                        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                        android:drawablePadding="20dp"
+                        android:padding="4dp"
+                        android:text="Opening hours: "
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/storeOpeningHours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/storeHeader"
+                        android:layout_toRightOf="@+id/storeOpeningHoursHeader"
+                        android:padding="4dp"
+                        android:text="9.00AM - 9.00PM"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/statusHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/storeOpeningHoursHeader"
+                        android:paddingLeft="45dp"
+                        android:layout_margin="5dp"
+                        android:text="Status: "
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/storeStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/storeOpeningHoursHeader"
+                        android:layout_toEndOf="@+id/statusHeader"
+                        android:layout_toRightOf="@+id/statusHeader"
+                        android:text=" Open "
+                        android:layout_margin="5dp"
+                        android:textColor="#27b85c"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/categoryHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/statusHeader"
+                        android:paddingLeft="45dp"
+                        android:layout_margin="5dp"
+                        android:text="Category"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/statusHeader"
+                        android:layout_toRightOf="@+id/categoryHeader"
+                        android:layout_margin="5dp"
+                        android:text="FOOD"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/storeInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_info_outline_red_24dp"
+                        android:drawableStart="@drawable/ic_info_outline_red_24dp"
+                        android:drawablePadding="20dp"
+                        android:padding="4dp"
+                        android:text="Information:"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/infoUpdates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Priority Shopping Hour will take place every Monday morning at the first hour of store operations (or 7am-8am for our 24-hour stores). Priority access to our
+                    stores will be given to the Pioneer Generation, persons with disability and pregnant women, ensuring them better accessibility and more space for safe-distance shopping." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_star_orange_24dp"
+                        android:drawableStart="@drawable/ic_star_orange_24dp"
+                        android:drawablePadding="20dp"
+                        android:padding="4dp"
+                        android:text="Hot Items:"
+                        android:textSize="20sp" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/items_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

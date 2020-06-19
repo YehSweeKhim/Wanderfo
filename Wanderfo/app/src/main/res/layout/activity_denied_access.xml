@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RequestAccess"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="Permission Denied"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#F00"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/storeNameDenied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:padding="4dp"
+            android:text="Ada Shop"
+            android:textSize="30sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/storeHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeName"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="20dp"
+                android:padding="4dp"
+                android:text="Location: "
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/storeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeName"
+                android:layout_toRightOf="@+id/storeHeader"
+                android:padding="4dp"
+                android:text="Upper Changi"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/storeOpeningHoursHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeHeader"
+                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                android:drawablePadding="20dp"
+                android:padding="4dp"
+                android:text="Opening hours: "
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/storeOpeningHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeHeader"
+                android:layout_toRightOf="@+id/storeOpeningHoursHeader"
+                android:padding="4dp"
+                android:text="9.00AM"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/statusHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeOpeningHoursHeader"
+                android:text="Status: "
+                android:paddingLeft="50dp"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/storeStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeOpeningHoursHeader"
+                android:layout_toEndOf="@+id/statusHeader"
+                android:layout_toRightOf="@+id/statusHeader"
+                android:text=" Closed "
+                android:textSize="15sp"
+                android:textColor="#F00"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="#FFFFFF">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/requestInp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:padding="8dp"
+                android:gravity="top|left"
+                android:cursorVisible="false"
+                android:scrollbars="vertical"
+                android:background="@drawable/rectangle"
+                android:hint="Reasons"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonSendReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Request"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
